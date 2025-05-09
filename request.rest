@@ -1,0 +1,22 @@
+POST https://test-fe.mysellerpintar.com/api/articles
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyNTBlOTQxOS05MWZkLTQzNTUtYmIwOS0xZjgwMjNmYzkwNjIiLCJpYXQiOjE3NDY2Mzk3MzF9.qK3lD3cw5RdVXBKRf7ZVx9cz7R5fdsBlb-WYEFyHdrI
+Content-Type: application/json
+
+{
+    "title": "test-post",
+    "content": "test123",
+    "categoryId": "779a2f5e-454f-4ef5-af1e-b3366ab754f2"
+}
+
+###
+POST https://test-fe.mysellerpintar.com/api/login
+Content-Type: application/json
+
+{
+    "username": "Muhamad Yoga"
+    "password": "yogacahaya123"
+}
+
+###
+GET https://test-fe.mysellerpintar.com/api/categories?name=funtesting
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyNTBlOTQxOS05MWZkLTQzNTUtYmIwOS0xZjgwMjNmYzkwNjIiLCJpYXQiOjE3NDY2NTQ5ODF9.Ofap37n_IWxuf5DV_gheP8T0bZGR3xa6H55gJeuXaoM
