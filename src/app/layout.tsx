@@ -25,8 +25,7 @@ export default function RootLayout({
 
   const pathName = usePathname();
   const queryClient = new QueryClient();
-  const hideNav = pathName === "/auth/sign-in";
-
+  const hideNav = ["/auth/sign-in", "/unauthorized"].includes(pathName);
   return (
     <html lang="en">
       <title>Admin GenzBlog</title>

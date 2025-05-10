@@ -1,6 +1,6 @@
 "use client"
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { AddCategory, getCategories } from "../services/categoryService";
+import { AddCategory, DeleteCategory, getCategories } from "../services/categoryService";
 
 export function useGetCategory(page: number) {
     return useQuery({
@@ -12,5 +12,11 @@ export function useGetCategory(page: number) {
 export function useCreateCategories() {
     return useMutation({
         mutationFn: AddCategory
+    })
+}
+
+export function useDeleteCategory() {
+    return useMutation({
+        mutationFn: DeleteCategory
     })
 }

@@ -18,13 +18,12 @@ import { Input } from './input';
 
 const AddCategory = () => {
     const [loading, setLoading] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
 
     const {register: editRegister, handleSubmit, formState:{errors}, reset} = useForm<CategotySchemaType>({
         resolver: zodResolver(CategorySchema)
     });
 
-    const {mutate: category} = useCreateCategories()
+    const {mutate: category} = useCreateCategories();
 
     const onSubmit = (data: CategotySchemaType) => {
         try {
@@ -40,8 +39,8 @@ const AddCategory = () => {
             })
 
             reset();
-            setIsOpen(false);
-            toast("Category has been created");
+
+            toast.success("Category has been created");
         } catch (error) {
             console.log(error)
         }finally{
@@ -51,7 +50,7 @@ const AddCategory = () => {
 
   return (
     <div>
-        <Dialog open={isOpen}>
+        <Dialog>
         <DialogTrigger>
             <Button className='bg-blue-500 text-white'><Plus className='w-10 h-10' /> Add Category</Button>
         </DialogTrigger>
@@ -65,7 +64,7 @@ const AddCategory = () => {
                     <Input type='text' placeholder='Enter Category...' {...editRegister("name")}/>
                     {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
                 </div>
-                <div className='flex justify-end gap-2'>
+                <div className='flex justify-end gap-2 mt-8'>
                     <Button className='bg-blue-500 text-white' type='submit' disabled={loading}>{loading ? 'uploading...' : 'upload'}</Button>
                 </div>
             </form>

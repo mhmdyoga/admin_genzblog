@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { baseApi } from "@/components/baseApi/baseApi"
 
@@ -22,7 +23,16 @@ export const AddCategory = async(data: Categories) => {
     return response.data
 }
 
-export const DeleteCategory = async(id: Categories) => {
+export const EditCategory = async(id: string, data: Categories) => {
+    const response = await baseApi.put(`/categories/${id}`, data, {
+        headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+    });
+    return response.data
+}
+
+export const DeleteCategory = async(id: string) => {
     const response = await baseApi.delete(`/categories/${id}`, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
