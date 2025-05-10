@@ -1,8 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Project
 
-## Getting Started
+This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-First, run the development server:
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mhmdyoga/admin_genzblog.git
+cd your-repo
+```
+
+2. Install dependencies:
+
+```bash
+npm install --legacy-peer-deps
+# or
+yarn install --legacy-peer-deps
+# or
+pnpm install  --legacy-peer-deps
+# or
+bun install --legacy-peer-deps
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +35,41 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧰 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **[Next.js](https://nextjs.org)** — React framework for building web apps.
+- **[TanStack Query](https://tanstack.com/query/latest)** — Data fetching and caching.
+- **[Zod](https://zod.dev)** — Type-safe schema validation.
+- **[React Hook Form](https://react-hook-form.com)** — Forms with ease and performance.
+- **[Axios](https://axios-http.com)** — Promise-based HTTP client.
+- **[shadcn/ui](https://ui.shadcn.com/)** — Beautifully designed UI components built with Radix and Tailwind CSS.
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ Add, Edit, Delete **Articles**
+- ✅ Add, Edit, Delete **Categories**
+- 🔐 **Protected Routes** — Only authenticated users can access certain pages (e.g., article & category management)
+- ⚙️ Form validation with **Zod + React Hook Form**
+- 🔄 API interaction using **Axios** and **TanStack Query**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🔗 [View Live Site](https://admin-genzblog.vercel.app)
 
-## Deploy on Vercel
+## 📚 Learn More
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js Documentation](https://nextjs.org/docs) — features, routing, API, and more.
+- [Interactive Tutorial](https://nextjs.org/learn) — hands-on learning experience.
+- [GitHub Repository](https://github.com/vercel/next.js) — contribute or follow development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ☁️ Deploy with Vercel
+
+This project is deployed on [Vercel](https://vercel.com), the creators of Next.js.
+
+Deploy your own by clicking below:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+More info: [Next.js Deployment Docs](https://nextjs.org/docs/app/building-your-application/deploying)
