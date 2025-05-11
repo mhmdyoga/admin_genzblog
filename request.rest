@@ -19,4 +19,4 @@ Content-Type: application/json
 
 ###
 GET https://test-fe.mysellerpintar.com/api/categories?name=funtesting
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyNTBlOTQxOS05MWZkLTQzNTUtYmIwOS0xZjgwMjNmYzkwNjIiLCJpYXQiOjE3NDY2NTQ5ODF9.Ofap37n_IWxuf5DV_gheP8T0bZGR3xa6H55gJeuXaoM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjMmNmZDYyYy0xMzJjLTQ0OTQtODg4Ny02ODNiMzQ0NTI0ZDAiLCJpYXQiOjE3NDY4NzkyMjl9.fRe6YCvveD8nTFgNMqtExPyZcP0YsyFy5CKvkf-5aig

@@ -10,7 +10,7 @@ export type Categories = {
 
 
 export const getCategories = async (page: number) => {
-    const response = await baseApi.get(`/categories?page=${page}`);
+    const response = await baseApi.get(`/categories?page=${page}`)
     return response.data
 }
 

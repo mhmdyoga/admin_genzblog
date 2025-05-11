@@ -39,7 +39,7 @@ import { Input } from '../ui/input';
 const CategoryPage = () => {
   const [page, setPage] = useState(1);
   const [name, setName] = useState("");
-  const [editId, setEditId] = useState<string | null>(null)
+  const [editId, setEditId] = useState<string | null>(null);
 
   useEffect(() => {
     const storageName = localStorage.getItem("username");
@@ -93,7 +93,9 @@ const CategoryPage = () => {
           </h2>
         </div>
         <div className='flex justify-between items-center p-3'>
-          <h2>Total category: {Categories?.totalData}</h2>
+          <div className='flex flex-col gap-4'>
+            <h2>Total category: {Categories?.totalData}</h2>
+          </div>
           <AddCategory/>
         </div>
         {isLoading ? (

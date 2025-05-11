@@ -142,7 +142,7 @@ const AddArticle = () => {
                 <SelectValue placeholder="Select category" />
               </SelectTrigger>
               <SelectContent>
-                {categories.map((cat) => (
+                {categories.filter((cat) => cat.id && cat.id.trim() !== "").map((cat) => (
                   <SelectItem key={cat.id} value={cat.id}>
                     {cat.name}
                   </SelectItem>
